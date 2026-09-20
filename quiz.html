@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield | Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            CYBERSHIELD
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="learn.html">
+                Learn
+            </a>
+
+            <a href="threats.html">
+                Threats
+            </a>
+
+            <a class="active" href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="links.html">
+                Resources
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>
+            Cyber Quiz
+        </h1>
+
+        <p>
+            Test your cybersecurity awareness.
+        </p>
+
+    </section>
+
+
+
+    <!-- Quiz -->
+
+    <main class="container">
+
+        <form id="quizForm">
+
+
+            <!-- Question 1 -->
+
+            <div class="card question">
+
+                <h3>
+                    1. What is phishing?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    A type of computer backup
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    A deceptive attempt to obtain information
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    A software update
+                </label>
+
+            </div>
+
+
+
+            <!-- Question 2 -->
+
+            <div class="card question">
+
+                <h3>
+                    2. Which is safer for an important account?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Reusing the same password everywhere
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Sharing your password with a friend
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    A unique strong password with MFA
+                </label>
+
+            </div>
+
+
+
+            <!-- Question 3 -->
+
+            <div class="card question">
+
+                <h3>
+                    3. What should you do with a suspicious link?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Verify it before opening
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Forward it to everyone
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Enter your password immediately
+                </label>
+
+            </div>
+
+
+
+            <!-- Question 4 -->
+
+            <div class="card question">
+
+                <h3>
+                    4. What does MFA add to an account?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    A second layer of verification
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    A public password
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    Automatic removal of malware
+                </label>
+
+            </div>
+
+
+
+            <!-- Submit Button -->
+
+            <button type="submit" class="btn">
+                Submit Quiz
+            </button>
+
+
+        </form>
+
+
+
+        <!-- Result -->
+
+        <div id="quizResult" class="result">
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        Keep learning. Keep questioning suspicious requests.
+
+    </footer>
+
+
+</body>
+
+</html>

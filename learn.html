@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield | Learn</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            CYBERSHIELD
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a class="active" href="learn.html">
+                Learn
+            </a>
+
+            <a href="threats.html">
+                Threats
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="links.html">
+                Resources
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>
+            Learn Cybersecurity
+        </h1>
+
+        <p>
+            Start with the concepts every internet user should know.
+        </p>
+
+    </section>
+
+    <section class="card password-checker">
+
+    <h2>Password Strength Checker</h2>
+
+    <p>
+        Enter a sample password to check its basic strength.
+    </p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter a password"
+    >
+
+    <button class="btn" onclick="checkPassword()">
+        Check Strength
+    </button>
+
+    <p id="passwordResult"></p>
+
+</section>
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+
+        <!-- Introduction -->
+
+        <section class="card">
+
+            <h2>
+                What is Cybersecurity?
+            </h2>
+
+            <p>
+                Cybersecurity is the practice of protecting
+                devices, networks, accounts and data from
+                unauthorized access, misuse and digital attacks.
+            </p>
+
+        </section>
+
+
+
+        <!-- CIA Triad -->
+
+        <h2>
+            Core Concepts
+        </h2>
+
+
+        <div class="grid three">
+
+
+            <div class="card">
+
+                <h3>
+                    Confidentiality
+                </h3>
+
+                <p>
+                    Only authorized people should be able
+                    to access information.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Integrity
+                </h3>
+
+                <p>
+                    Information should remain accurate and
+                    protected from unauthorized changes.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Availability
+                </h3>
+
+                <p>
+                    Systems and information should be
+                    accessible when they are needed.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Common Threats -->
+
+        <h2>
+            Common Cyber Threats
+        </h2>
+
+
+        <div class="grid three">
+
+
+            <div class="card">
+
+                <h3>
+                    Phishing
+                </h3>
+
+                <p>
+                    Fake emails, messages or websites that
+                    try to trick users into revealing information.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Malware
+                </h3>
+
+                <p>
+                    Malicious software designed to damage,
+                    disrupt or gain unauthorized access to systems.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Social Engineering
+                </h3>
+
+                <p>
+                    Manipulating people into revealing information
+                    or performing unsafe actions.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Safety Checklist -->
+
+        <h2>
+            Basic Safety Checklist
+        </h2>
+
+
+        <div class="card checklist">
+
+            <p>
+                ✓ Use unique and strong passwords.
+            </p>
+
+            <p>
+                ✓ Enable multi-factor authentication when available.
+            </p>
+
+            <p>
+                ✓ Keep your operating system and applications updated.
+            </p>
+
+            <p>
+                ✓ Check links and senders before opening messages.
+            </p>
+
+            <p>
+                ✓ Avoid sharing passwords and OTPs.
+            </p>
+
+            <p>
+                ✓ Back up important files regularly.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        Learn the basics. Practice the habits.
+
+    </footer>
+
+
+</body>
+
+</html>

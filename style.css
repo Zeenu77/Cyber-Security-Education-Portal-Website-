@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #eaf7ff;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(0, 217, 255, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(45, 95, 255, 0.15),
+            transparent 30%
+        ),
+        #050b16;
+}
+
+
+/* Background Grid */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 35px 35px;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 6%;
+
+    background: rgba(4, 10, 20, 0.88);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(103, 232, 249, 0.18);
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    color: #67e8f9;
+
+    letter-spacing: 2px;
+}
+
+
+/* Navigation Links */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: #c9e9f5;
+    text-decoration: none;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    transition: 0.25s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #67e8f9;
+    background: rgba(103, 232, 249, 0.08);
+}
+
+
+/* Home Hero Section */
+
+.hero {
+    min-height: 72vh;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            rgba(3, 9, 20, 0.72),
+            rgba(3, 9, 20, 0.92)
+        ),
+        url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80")
+        center / cover;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+/* Small Hero Text */
+
+.tag {
+    color: #67e8f9;
+
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+
+    margin-bottom: 14px;
+}
+
+
+/* Headings */
+
+h1,
+h2 {
+    font-family: "Orbitron", sans-serif;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 6vw, 4.7rem);
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin-bottom: 18px;
+    color: #8befff;
+}
+
+h3 {
+    color: #67e8f9;
+    margin-bottom: 10px;
+}
+
+
+/* Paragraphs */
+
+p {
+    line-height: 1.75;
+    color: #c4d8e4;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 24px;
+
+    padding: 12px 22px;
+
+    border: 0;
+    border-radius: 9px;
+
+    color: #03101a;
+    background: #67e8f9;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 24px rgba(103, 232, 249, 0.35);
+}
+
+
+/* Main Container */
+
+.container {
+    width: min(1120px, 90%);
+    margin: 55px auto;
+}
+
+
+/* Grid */
+
+.grid {
+    display: grid;
+    gap: 22px;
+}
+
+.grid.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Cards */
+
+.card {
+    padding: 25px;
+
+    border: 1px solid rgba(103, 232, 249, 0.15);
+    border-radius: 16px;
+
+    background: rgba(10, 23, 38, 0.78);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.2);
+
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(103, 232, 249, 0.45);
+}
+
+
+/* Page Header */
+
+.page-header {
+    padding: 75px 8%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(3, 9, 20, 0.7),
+            rgba(3, 9, 20, 0.94)
+        ),
+        url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1600&q=80")
+        center / cover;
+}
+
+.page-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+
+/* Learn Page Checklist */
+
+.checklist p {
+    margin: 9px 0;
+}
+
+
+/* Threat Cards */
+
+.threat-card {
+    cursor: pointer;
+}
+
+
+/* Hidden Threat Information */
+
+.extra {
+    display: none;
+
+    margin-top: 12px;
+
+    color: #8befff;
+}
+
+
+/* Show Threat Information */
+
+.threat-card.open .extra {
+    display: block;
+}
+
+
+/* Cybercrime Section */
+
+.map-section {
+    margin-top: 30px;
+}
+
+
+/* Small Text */
+
+.small,
+.source-note {
+    font-size: 0.86rem;
+}
+
+
+/* Source Note */
+
+.source-note {
+    margin-top: 18px;
+    color: #93adbb;
+}
+
+
+/* Cybercrime Data Grid */
+
+.india-map {
+    margin-top: 22px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+/* State Cards */
+
+.map-card {
+    padding: 18px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 217, 255, 0.12),
+            rgba(60, 90, 255, 0.12)
+        );
+
+    border: 1px solid rgba(103, 232, 249, 0.2);
+}
+
+.map-card strong,
+.map-card span {
+    display: block;
+}
+
+.map-card span {
+    color: #c4d8e4;
+
+    margin-top: 5px;
+
+    font-size: 0.85rem;
+}
+
+
+/* Quiz Questions */
+
+.question {
+    margin-bottom: 20px;
+}
+
+
+/* Quiz Options */
+
+.question label {
+    display: block;
+
+    padding: 8px 0;
+
+    color: #c4d8e4;
+}
+
+
+/* Radio Buttons */
+
+.question input {
+    margin-right: 8px;
+}
+
+
+/* Quiz Result */
+
+.result {
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 24px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(103, 232, 249, 0.35);
+
+    background: rgba(103, 232, 249, 0.08);
+
+    text-align: center;
+}
+
+
+/* Show Quiz Result */
+
+.result.show {
+    display: block;
+}
+
+
+/* Resource Links */
+
+.text-link {
+    color: #67e8f9;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-top: 12px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 35px 15px;
+
+    color: #7893a1;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .grid.three,
+    .india-map {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
+.password-checker {
+    text-align: center;
+}
+
+.password-checker input {
+    width: 70%;
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: 1px solid #1d4a68;
+    border-radius: 5px;
+
+    background-color: #071a2b;
+    color: white;
+}
+
+#passwordResult {
+    margin-top: 15px;
+    color: #00d9ff;
+    font-weight: bold;
+}

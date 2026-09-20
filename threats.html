@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield | Cyber Threats</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            CYBERSHIELD
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="learn.html">
+                Learn
+            </a>
+
+            <a class="active" href="threats.html">
+                Threats
+            </a>
+
+            <a href="quiz.html">
+                Quiz
+            </a>
+
+            <a href="links.html">
+                Resources
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>
+            Cyber Threats
+        </h1>
+
+        <p>
+            Recognize common threats before they become problems.
+        </p>
+
+    </section>
+
+
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+
+        <!-- Threat Cards -->
+
+        <h2>
+            Common Cyber Threats
+        </h2>
+
+
+        <div class="grid three">
+
+
+            <!-- Phishing -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Phishing
+                </h3>
+
+                <p>
+                    Fake messages or websites designed to trick
+                    people into giving sensitive information.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Check the sender, website address and
+                        request carefully before clicking.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Malware -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Malware
+                </h3>
+
+                <p>
+                    Malicious software that can damage devices,
+                    disrupt systems or compromise information.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Keep your software updated and download
+                        files only from trusted sources.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Ransomware -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Ransomware
+                </h3>
+
+                <p>
+                    Malware that can make files or systems
+                    unavailable and demand payment.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Keep regular backups and install
+                        security updates.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Social Engineering -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Social Engineering
+                </h3>
+
+                <p>
+                    Manipulating people into revealing
+                    information or taking unsafe actions.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Be careful with urgent requests,
+                        unfamiliar people and unexpected messages.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Password Attacks -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Password Attacks
+                </h3>
+
+                <p>
+                    Attempts to guess, steal or obtain
+                    passwords to access accounts.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Use long, unique passwords and
+                        enable multi-factor authentication.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Online Fraud -->
+
+            <article class="card threat-card"
+                     onclick="toggleThreat(this)">
+
+                <h3>
+                    Online Fraud
+                </h3>
+
+                <p>
+                    Deceptive online activities designed to
+                    obtain money or sensitive information.
+                </p>
+
+                <div class="extra">
+
+                    <strong>How to stay safe:</strong>
+
+                    <p>
+                        Verify payment requests and never
+                        share passwords or OTPs.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- Cybercrime Map Section -->
+
+        <section class="card map-section">
+
+            <h2>
+                Cybercrime in India
+            </h2>
+
+            <p class="small">
+
+                Explore reported cyber-fraud activity across
+                selected states and Union Territories.
+
+            </p>
+
+
+            <!-- Map Area -->
+
+            <div class="india-map">
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Gujarat
+                    </strong>
+
+                    <span>
+                        367,754 reported incidents
+                    </span>
+
+                </div>
+
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Haryana
+                    </strong>
+
+                    <span>
+                        212,001 reported incidents
+                    </span>
+
+                </div>
+
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Delhi
+                    </strong>
+
+                    <span>
+                        205,464 reported incidents
+                    </span>
+
+                </div>
+
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Bihar
+                    </strong>
+
+                    <span>
+                        149,857 reported incidents
+                    </span>
+
+                </div>
+
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Andhra Pradesh
+                    </strong>
+
+                    <span>
+                        113,439 reported incidents
+                    </span>
+
+                </div>
+
+
+
+                <div class="map-card">
+
+                    <strong>
+                        Chhattisgarh
+                    </strong>
+
+                    <span>
+                        63,941 reported incidents
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <p class="source-note">
+
+                Source: Ministry of Home Affairs, Rajya Sabha
+                answer, 12 March 2025. Figures represent
+                cyber-fraud incidents reported on the National
+                Cybercrime Reporting Portal since inception
+                to 28 February 2025.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- What To Do -->
+
+        <section class="card">
+
+            <h2>
+                What To Do When You Suspect a Cyber Threat
+            </h2>
+
+
+            <div class="grid three">
+
+
+                <div>
+
+                    <h3>
+                        STOP
+                    </h3>
+
+                    <p>
+                        Do not immediately click, pay or
+                        share sensitive information.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <h3>
+                        VERIFY
+                    </h3>
+
+                    <p>
+                        Check the sender, website or request
+                        independently.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <h3>
+                        REPORT
+                    </h3>
+
+                    <p>
+                        Report suspicious activity through
+                        appropriate official channels.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        Awareness is the first layer of defense.
+
+    </footer>
+
+
+</body>
+
+</html>
